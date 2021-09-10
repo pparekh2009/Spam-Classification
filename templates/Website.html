@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Email Spam Classifier</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Website.css') }}">
+	<link rel="stylesheet" type="text/css" href="D:\ML Projects\Project 4 (Spam Classification)\static\Website.css">
+</head>
+<body>
+	<div class="form">
+		<form action="/" method="POST">
+			<label for="email">E-Mail</label>
+			<br>
+			<input type="text" class="email" name="email" placeholder="Enter or Paste your E-Mail here!">
+			<br>
+			<input class="submit" type="submit" name="submit" value="Submit">
+		</form>
+	</div>
+	<br>
+	<h4 class="output">{{pred}}</h4>
+	<br>
+	<h4 class="accuracy">Note: The accuracy of this model is 98.77%</h4>
+</body>
+</html>
